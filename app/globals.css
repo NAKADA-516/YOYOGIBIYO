@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --tiffany-blue: #81D8D0;
+  --tiffany-dark: #5FB5AE;
+  --tiffany-light: #B2E6E2;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: 0.02em;
+  line-height: 1.8;
+}
+
+/* 高級感のあるアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ティファニーブルーのグラデーション */
+.tiffany-gradient {
+  background: linear-gradient(to right, #81D8D0, #B2E6E2);
+}
+
+/* ホバーエフェクト */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(129, 216, 208, 0.2);
+}
